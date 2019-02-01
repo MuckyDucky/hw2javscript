@@ -1,0 +1,267 @@
+/*
+	Global classes
+					*/
+body {
+	background-image: url("images/iphoneOL.jpg");
+	background-repeat: no-repeat;
+	font-family: Avenir, sans-serif;
+}
+
+#screen {
+	height: 530px;
+	width: 300px;
+	margin: 105px 23px;
+}
+
+#content{
+	height: 100%;
+}
+
+.head-bar {
+	background-color: pink;
+	font-size:12px;
+	height:8%;
+}
+
+/*
+ Album Select Page
+					*/
+
+.head-bar .head-bar-title{
+	margin:auto;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+
+.albums-container{
+	margin:5%;
+	display:grid;
+	grid-column-gap: 10px;
+	grid-row-gap : 40px;
+	grid-template-rows:repeat(2,1fr);
+	grid-template-columns:repeat(2,1fr);
+}
+
+.single-album-container{
+	//border-style:solid;
+	width:100%;
+	max-height: 100%;
+}
+
+.album-image{
+	width:100%;
+	height:auto;
+}
+
+.album-title{
+	margin:5px;
+	text-align: center;
+	font-weight: bold;
+	font-size:16px;
+}
+
+.album-artist{
+	margin:5px;
+	text-align: center;
+	font-style: italic;
+	font-size:13px;
+}
+
+
+/*
+	Song Select Page
+			*/
+
+.back-arrow-container{
+	max-height:100%;
+}
+
+a#back-link{
+	height:100%;
+	width:auto;
+}
+
+img#back-arrow-icon{
+	height:100%;
+	width:auto;
+}
+
+.songselect-content{
+	padding:5%;
+}
+.artandinfo-container{
+	display:grid;
+	grid-column-gap: 10px;
+	grid-template-rows:1fr;
+	grid-template-columns:repeat(2,1fr);
+}
+
+.artandinfo-info{
+
+}
+
+.artandinfo-art{
+	width: 100%;
+	height: auto;
+}
+
+.info-album-title{
+	margin:7%;
+	font-weight: bold;
+	font-size:20px;
+}
+
+.info-album-artist{
+	margin:7%;
+	font-style: italic;
+	font-size:15px;
+}
+
+.info-album-year{
+	margin:7%;
+	font-size:15px;
+}
+
+ol.tracklist{
+	padding:0 5%;
+}
+
+li.tracklist-item{
+	border-style:solid;
+	padding:0.1% 0.1% 0.1% 2%;
+	margin-bottom: 5px;
+}
+
+/*
+	Player
+			*/
+.player-content{
+
+	margin: 10% 10% 0 10%;
+}
+
+.player-albumart {
+	display: block;
+	width:100%;
+	margin:auto;
+}
+
+.player-songinfo {
+	text-align: center;
+
+}
+
+.player-songtitle{
+
+}
+
+.player-albumartist{
+	color: pink;
+}
+
+.player-togglers{
+	display:block;
+	margin:auto;
+}
+
+#player-playbar{
+	width:100%
+}
+
+
+#player-currtime{
+	display: inline;
+
+}
+
+#player-maxtime{
+	display:inline;
+	float:right;
+}
+
+
+.player-skipbuttons{
+	width:60%;
+	margin:auto;
+}
+
+.skipbutton{
+	background-color: white;
+	border: solid 1px black;
+}
+
+.player-volleveler{
+	margin:auto;
+	display:grid;
+	grid-template-columns: auto repeat(6,1fr)
+
+
+}
+
+#vol-icon{
+	float:left;
+}
+
+
+
+.vol-box{
+	display:inline-block;
+	height: 6px;
+	width:24px;
+	border: black solid 1px;
+	margin:auto;
+}
+
+
+.player-volumetogglers{
+
+}
+
+
+.vol-toggler{
+	background-color: white;
+	width:60px;
+	border: 2px solid gray;
+}
+
+
+#player-voldown{
+
+}
+
+#player-volup{
+	float:right;
+}
+
+
+
+
+.volume-bar {
+
+}
+
+.volume-level {
+
+}
+
+.volume-rocker {
+
+}
+
+.player-controls{
+
+}
+
+#player-time {
+
+}
+
+#time-elapsed {
+
+}
+
+#time-total{
+
+}

@@ -84,19 +84,21 @@ function pause(){ //pause the playing song
 }
 
 function nextSong() { //skip to next song
-  if(currTrackIndex < tracklist.length-1){ //if current track is not the last one
-    currTrackIndex++;
-    document.getElementById("songtitle").innerHTML = tracklist[currTrackIndex];
-    init();
-  }
+
+  if (currTrackIndex == tracklist.length - 1){
+    currTrackIndex = 0;
+  } else currTrackIndex++;
+  document.getElementById("songtitle").innerHTML = tracklist[currTrackIndex];
+  init();
+
 }
 
 function prevSong() { //skip to previous song
-  if(currTrackIndex>0){ //if current track is not the first one
-    currTrackIndex--;
-    document.getElementById("songtitle").innerHTML = tracklist[currTrackIndex];
-    init();
-  }
+  if(currTrackIndex==0) {
+    currTrackIndex = tracklist.length - 1
+  } else currTrackIndex--;
+  document.getElementById("songtitle").innerHTML = tracklist[currTrackIndex];
+  init();
 }
 
 function updateTimeDisplay(){ //update the display of the current time progress on screen
